@@ -24,8 +24,8 @@ services:
       PLEX_CLAIM: $PLEX_CLAIM
       PLEX_UID: $PUID
       PLEX_GID: $PGID
-        #ADVERTISE_IP: http://$SERVER_IP:32400/
-        #ALLOWED_NETWORKS: $LOCAL_NETWORK
+        ADVERTISE_IP: http://$SERVER_IP:32400/
+        ALLOWED_NETWORKS: $LOCAL_NETWORK
     hostname: plexserver.example.com
     volumes:
       - ./data/plex/database:/config
